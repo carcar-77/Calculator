@@ -2,12 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fusco Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"> </script>
 </head>
-<body onload="loading()">
-<input type="text" id="CalcInput">
-<div>
-    <
+<body onload="load()">
+
+<div class="calculator">
+    <input id="CalcInput" type="text">
+    <div id="group">
+        <div>Awnser:</div>
+        <div id="Result"></div>
+    </div>
+    <div class="buttons">
+
+        <button onclick="add('7')">7</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('9')">9</button>
+        <button class="operator" onclick="add('+')">+</button>
+        <button onclick="add('4')">4</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('6')">6</button>
+        <button class="operator" onclick="add('-')">-</button>
+        <button onclick="add('1')">1</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('3')">3</button>
+        <button class="operator" onclick="add('*')">*</button>
+        <button onclick="add('0')">0</button>
+        <button onclick="add('.')">.</button>
+        <button class="equals" onclick="Calculate()">=</button>
+        <button class="operator" onclick="add('/')">/</button>
+        <button onclick="add('(')">(</button>
+        <button onclick="add(')')">)</button>
+        <button class="operator" onclick="add('%')">%</button>
+        <button class="operator" onclick="add('**')">^</button>
+    </div>
+    <div class= "arrows">
+        <button class="arrow" onclick="arrows(-1)">←</button>
+        <button class="arrow" onclick="arrows(1)">→</button>
+    </div>
 </div>
 </body>
 </html>
